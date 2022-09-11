@@ -1,0 +1,31 @@
+import { ControlElement, ControlProps, JsonFormsState, JsonSchema, OwnPropsOfControl } from '@jsonforms/core';
+import { OnDestroy, OnInit } from '@angular/core';
+import { NgRedux } from '@angular-redux/store';
+import { FormControl, ValidatorFn } from '@angular/forms';
+import { Subscription } from 'rxjs';
+import { JsonFormsBaseRenderer } from './base.renderer';
+export declare class JsonFormsControl extends JsonFormsBaseRenderer<ControlElement> implements OnInit, OnDestroy {
+    protected ngRedux: NgRedux<JsonFormsState>;
+    id: string;
+    disabled: boolean;
+    visible: boolean;
+    form: FormControl;
+    subscription: Subscription;
+    data: any;
+    label: string;
+    description: string;
+    error: string | null;
+    scopedSchema: JsonSchema;
+    enabled: boolean;
+    hidden: boolean;
+    constructor(ngRedux: NgRedux<JsonFormsState>);
+    getEventValue: (event: any) => any;
+    onChange(ev: any): void;
+    ngOnInit(): void;
+    validator: ValidatorFn;
+    mapAdditionalProps(props: ControlProps): void;
+    ngOnDestroy(): void;
+    protected getOwnProps(): OwnPropsOfControl;
+    protected mapToProps(state: JsonFormsState): ControlProps;
+    protected triggerValidation(): void;
+}

@@ -1,0 +1,74 @@
+{
+  "_from": "git+https://github.com/apache/cordova-plugin-file-transfer.git",
+  "_id": "cordova-plugin-file-transfer@2.0.0-dev",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-file-transfer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/apache/cordova-plugin-file-transfer.git",
+    "rawSpec": "https://github.com/apache/cordova-plugin-file-transfer.git",
+    "saveSpec": "git+https://github.com/apache/cordova-plugin-file-transfer.git",
+    "fetchSpec": "https://github.com/apache/cordova-plugin-file-transfer.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/apache/cordova-plugin-file-transfer.git#2465f508adfadd5be4a8ea9ecd1ca01779164ea2",
+  "_spec": "https://github.com/apache/cordova-plugin-file-transfer.git",
+  "_where": "C:\\Users\\DELL\\ionic\\jsonforms-ionic-playground",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-file-transfer/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-file-transfer",
+    "platforms": [
+      "android",
+      "ios",
+      "windows",
+      "browser"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova File Transfer Plugin",
+  "devDependencies": {
+    "@cordova/eslint-config": "^4.0.0"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-file-transfer#readme",
+  "keywords": [
+    "cordova",
+    "file",
+    "transfer",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows",
+    "cordova-browser"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-file-transfer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-file-transfer.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "types": "./types/index.d.ts",
+  "version": "2.0.0-dev"
+}
